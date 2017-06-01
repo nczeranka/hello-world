@@ -14,7 +14,7 @@
 
       /* Reset Styles */
       body{margin:0; padding:0;}
-      img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+      img{border:0; height:auto; outline:none; text-decoration:none;}
       table td{border-collapse:collapse;}
       #backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
 
@@ -30,6 +30,8 @@
         border: none;
 
       }
+
+
 
       h1, .h1{
         color:#202020;
@@ -102,7 +104,7 @@
         color:#202020;
         display:block;
         font-family:Lato;
-        font-size:20px;
+        font-size:18px;
         font-weight:lighter;
         line-height:100%;
         margin-top:0;
@@ -197,13 +199,13 @@
       }
 
       .footerContent div a:link, /* Yahoo! Mail Override */ .footerContent div a .yshortcuts /* Yahoo! Mail Override */{
-        color:#006070;
+        color:#e70;
         font-weight:normal;
         text-decoration:none;
       }
 
       .footerContent div a:hover, .footerContent div a:visited, /* Yahoo! Mail Override */ .footerContent div a .yshortcuts /* Yahoo! Mail Override */{
-        color:#006070;
+        color:#e70;
         font-weight:normal;
         text-decoration:underline;
       }
@@ -269,6 +271,7 @@
         background: #006070;
         height: 2px;
       }
+
     </style>
   </head>
     <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
@@ -283,22 +286,16 @@
 
                                   <!-- // Begin Module: Standard Preheader \ -->
                                     <table border="0" cellpadding="10" cellspacing="0" width="100%">
-                                        <tr>
-                                            <td valign="top">
+                                      <tr>
+                                          <td valign="top">
                                               <div>
                                                    OpusCapita &mdash; Business Network Portal
                                                 </div>
-                                            </td>
-                                            <!-- *|IFNOT:ARCHIVE_PAGE|* -->
-                                            <td valign="top" width="190">
-                                              <div>
-                                                  Can't read this Mail?<br /><a href="#" target="_blank">Open in browser</a>.
-                                               </div>
-                                            </td>
-                                            <!-- *|END:IF|* -->
+                      <!-- *|END:IF|* -->
                                         </tr>
                                     </table>
                                   <!-- // End Module: Standard Preheader \ -->
+
                                 </td>
                             </tr>
                         </table>
@@ -352,8 +349,8 @@
                                                     <tr>
                                                         <td valign="top">
                                                           <div>
-                                                            <a href="#"><img src="http://www.opuscapita.com/media/1673/oc_logo_rgb.jpg" style="margin-left: 70%;max-width: 200px;" /></a>
-                                                            <h1 class="h1">
+                                                            
+                                                            <h1 class="h1" style="display: inline;">
                                                               <a href="#">Welcome to OpusCapita &mdash;<br/> Business Network Portal  </a><br>
                                                               
                                                             </h1>
@@ -384,21 +381,18 @@
                                                   <tr>
                                                       <td colspan="2" id="social">
                                                           <div>
-                                                            Please click on
-                                                            <a href="http://localhost:8080/auth/registration/register/verify?code={{code}}">Confirmation</a>
-                                                            to finalize your registration at the Business Network Portal.
-                                                            
+                                                            <h4>Please click on <a href="#">Confirmation</a> to finalize your registration at the Business Network Portal</h4>
                                                             <br/>
-                                                            <br/>
+                                                            <p style="font-size: 16px;">
+                                                            	If the link does not work, please follow the steps below:
+                                                            </p>
+                                                            <ol>
+                                                            	<li>Open the <a href="#">Verification</a> link</li>
+                                                            	<li>Copy the verification code: <b>7299497</b></li>
+                                                            	<li>Paste the verification code to entry field in the confirmation page</li>
+                                                            	<li>Finally press on "Confirm" and proceed with the login</li>
+                                                            </ol>
                                                             
-                                                            If the link does not work, please follow the steps below:
-                                                            <ul>
-                                                                <li>Open the <a href="http://localhost:8080/auth/registration/register/verify">Verification</a> link.</li>
-                                                                <li>Copy the code: <b>{{code}}</b></li>
-                                                                <li>Paste the code to entry field in the confirmation page.</li>
-                                                                <li>Finally press on "Confirm" and proceed with the login.</li>
-                                                            </ul>
-
                                                             <p style="font-size: 16px; font-style: italic;">Thanks for your participation!</p>
                                                           </div>
                                                       </td>
@@ -407,7 +401,6 @@
                                                       <td valign="top" width="350"></td>
 
                                                       <td valign="top" width="250" id="monkeyRewards">
-<!--
                                                           <div>
                                                             <p>
                                                               If you have questions regarding this Mail please contact:<br>
@@ -416,7 +409,6 @@
                                                               <a href="#"><b>E-Mail Address</b></a>
                                                             </p>
                                                           </div>
--->
                                                       </td>
                                                   </tr>
                                               </table>
